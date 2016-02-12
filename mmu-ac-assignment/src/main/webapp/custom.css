@@ -1,0 +1,13 @@
+body {
+  padding-top: 50px;
+}
+.headi {
+  padding: 40px 15px;
+  text-align: center;
+}
+.outer {
+     max-height:200px
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+} 

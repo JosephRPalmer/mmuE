@@ -5,6 +5,6 @@ import java.util.Collection;
 
 public interface Staff {
 	 public void addStaff (StaffMember sinfo);
-	 public ArrayList listStaff();
+	 public ArrayList<StaffMember> listStaff();
 	 public Collection searchStaff(String searchStr);
 	}

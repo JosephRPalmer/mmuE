@@ -5,17 +5,17 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 @XmlRootElement
 public class StaffMember {
-private int StaffID;
+private String StaffID;
 private String surname;
 private String forename;
 private String location;
 private String phone;
 private String email; 
-
+//DAO including getters and setters
 public StaffMember(){
 }
 
-public StaffMember(int sID, String sname, String fname, String loc, String phon, String mail){
+public StaffMember(String sID, String sname, String fname, String loc, String phon, String mail){
 	StaffID = sID;
 	surname = sname;
 	forename = fname;
@@ -24,11 +24,11 @@ public StaffMember(int sID, String sname, String fname, String loc, String phon,
 	phone = phon;
 }
 
-public int getStaffID() {
+public String getStaffID() {
 	return StaffID;
 }
 @XmlElement
-public void setStaffID(int staffID) {
+public void setStaffID(String staffID) {
 	StaffID = staffID;
 }
 
@@ -60,8 +60,8 @@ public String getPhone() {
 	return phone;
 }
 @XmlElement
-public void setPhone(String phone) {
-	this.phone = phone;
+public void setPhone(String string) {
+	this.phone = string;
 }
 
 public String getEmail() {
@@ -71,6 +71,8 @@ public String getEmail() {
 public void setEmail(String email) {
 	this.email = email;
 }
+
+
 
 
 
